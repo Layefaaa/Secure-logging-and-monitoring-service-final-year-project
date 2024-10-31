@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Account Suspension Notification</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f1f1f1;
+            margin: 0;
+            padding: 0;
+            color: #000;
+        }
+        .email-container {
+            max-width: 600px;
+            margin: auto;
+            background-color: #ffffff;
+            padding: 20px;
+        }
+        .hero img {
+            width: 50px;
+            height: auto;
+            display: block;
+            margin: auto;
+        }
+        .text {
+            text-align: center;
+            padding: 0 20px;
+        }
+        .container p {
+            font-size: 16px;
+            color: #000;
+        }
+        .footer {
+            text-align: center;
+            padding-top: 20px;
+        }
+        .footer p {
+            font-size: 14px;
+            color: rgba(0, 0, 0, .6);
+        }
+    </style>
+</head>
+<body>
+    <center style="background-color: #f1f1f1;">
+        <div class="email-container">
+            <!-- Logo -->
+            <div class="hero">
+                <img src="https://res.cloudinary.com/dhcshtjwk/image/upload/v1724069588/logGuard_pxths5.png" alt="Service Logo">
+            </div>
+
+            <!-- Message -->
+            <div class="text">
+                <h2>Account Suspension Notification</h2>
+                <p>Hello {{USERNAME}},</p>
+                <p>We regret to inform you that your account has been temporarily suspended due to a violation of our service policies. Please review our <a href="{{SERVICE_LINK}}" style="color: #30e3ca;">terms and conditions</a> for more details.</p>
+                <p>If you believe this action was taken in error, kindly contact our support team at <a href="mailto:loguardservice01@gmail.com" style="color: #30e3ca;">loguardservice</a>.</p>
+                <p>Thank you for your understanding.</p>
+            </div>
+
+            <!-- Footer -->
+            <div class="footer">
+                <p>Useful Links: <a href="{{SERVICE_LINK}}/home">Home</a> | <a href="{{SERVICE_LINK}}/about">About Us</a></p>
+                <p>If you did not request this service, you can <a href="#" style="color: #30e3ca;">delete</a> this email.</p>
+            </div>
+        </div>
+    </center>
+</body>
+</html>
